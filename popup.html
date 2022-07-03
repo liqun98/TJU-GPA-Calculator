@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <button id="start"><span>计算加权!</span></button>
+  </div>
+  <!-- <div id="GPA">
+    <label>GPA</label>
+    <div class="required">
+      <span>必修GPA:</span>
+      <span class="result"></span>
+    </div>
+    <div class="all">
+      <span>全部课程GPA:</span>
+      <span class="result"></span>
+    </div>
+  </div>
+  <div id="Score">
+    <label>Score</label>
+    <div class="required">
+      <span>必修分数:</span>
+      <span class="result"></span>
+    </div>
+    <div class="all">
+      <span>全部课程分数:</span>
+      <span class="result"></span>
+    </div>
+  </div> -->
+  <table>
+    <thead>
+      <tr>
+        <td>
+          <h2>您的加权详情：</h2>
+        </td>
+      </tr>
+    </thead>
+    <tbody class="container">
+      <tr id="agpa">
+        <td>GPA</td>
+        <td class="result"></td>
+      </tr>
+      <tr id="rgpa">
+        <td>必修GPA</td>
+        <td class="result"></td>
+      </tr>
+      <tr id="ascore">
+        <td>加权</td>
+        <td class="result"></td>
+      </tr>
+      <tr id="rscore">
+        <td>必修加权</td>
+        <td class="result"></td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>注：本插件仅辅助计算，如与教务处查询绩点有出入，还请以教务处结果为准</footer>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

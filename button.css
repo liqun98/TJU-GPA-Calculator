@@ -1,0 +1,92 @@
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button{
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2c6afb;
+  border: 2px solid #fff;
+  background-color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+button span{
+  position: relative;
+  z-index: 2;
+}
+
+button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #FF4500;
+  transition: all .35s;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:hover:after{
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  font-family: Helvetica, Tahoma, Arial, STXihei, "Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei", sans-serif;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
+}
+
+.container {
+  transition: all 1s;
+  height: 77.5px;
+}
+
+.container.pre-animation {
+  opacity:0;
+  max-height: 0;
+}
+
+table{
+  border: 2px solid white;
+  width: 70%;
+  margin: 20px;
+  padding: 30px;
+  padding-top: 10px;
+}
+
+td {
+  transition: all 0.5s ease-out;
+}
+
+td.result {
+  text-align: right;
+}
+
+td h2{
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-bottom: 10px;
+}
